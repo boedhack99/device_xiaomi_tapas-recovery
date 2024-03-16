@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/tapas
+DEVICE_PATH := device/xiaomi/xun
 
 # Architecture
 TARGET_ARCH                := arm64
@@ -14,7 +14,7 @@ TARGET_CPU_ABI2            :=
 TARGET_CPU_VARIANT         := cortex-a73
 TARGET_CPU_VARIANT_RUNTIME := cortex-a73
 
-TARGET_2ND_ARCH 	       := arm
+TARGET_2ND_ARCH            := arm
 TARGET_2ND_ARCH_VARIANT    := armv8-a
 TARGET_2ND_CPU_ABI         := armeabi-v7a
 TARGET_2ND_CPU_ABI2        := armeabi

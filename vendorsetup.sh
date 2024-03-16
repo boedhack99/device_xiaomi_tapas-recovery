@@ -1,7 +1,7 @@
 #!/bin/bash
 
- export TARGET_DEVICE_ALT="topaz"
- export OF_MAINTAINER="chickendrop89"
+ export TARGET_DEVICE_ALT="xun"
+ export OF_MAINTAINER="dblenk9"
  export FOX_VARIANT="A13+"
 
  # Binaries & Tools
@@ -49,10 +49,10 @@
  export OF_ADVANCED_SECURITY=1
 
  # Screen settings
- export OF_SCREEN_H=2400
- export OF_STATUS_H=95
- export OF_STATUS_INDENT_LEFT=48
- export OF_STATUS_INDENT_RIGHT=48
+ export OF_SCREEN_H=1920
+ export OF_STATUS_H=108
+ export OF_STATUS_INDENT_LEFT=88
+ export OF_STATUS_INDENT_RIGHT=88
  export OF_ALLOW_DISABLE_NAVBAR=0
  export OF_CLOCK_POS=1 # Left & Right
 

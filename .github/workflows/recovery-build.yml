@@ -17,7 +17,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/chickendrop89/orangefox_device_xiaomi_tapas'
+        default: 'https://github.com/boedhack99/device_xiaomi_xun-recovery'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
@@ -25,19 +25,19 @@ on:
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/xiaomi/tapas'
+        default: 'device/xiaomi/xun'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'tapas'
+        default: 'xun'
       DEVICE_VARIANT:
         description: 'DEVICE_VARIANT'
         required: true
-        default: 'tapas/topaz-A13+'
+        default: 'xun-A13+'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_tapas'
+        default: 'twrp_xun'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
@@ -143,18 +143,8 @@ jobs:
         tag_name: ${{ steps.date.outputs.builddate }}
         body: |
           Manifest: ${{ github.event.inputs.MANIFEST_BRANCH }}
-          Device: ${{ github.event.inputs.DEVICE_NAME }}/topaz
+          Device: ${{ github.event.inputs.DEVICE_NAME }}/xun
           Releaase Date: ${{ steps.date.outputs.builddate }}
-
-          * [XDA Developers Thread](https://forum.xda-developers.com/t/unofficial-recovery-13-orangefox-recovery-project-tapas-topaz.4600157/)
-          
-          This build works for both `topaz` and `tapas` variant !!!
-
-          Known Issues:
-          *
-
-          **Notice:**
-          *
 
           Changelog:
           *

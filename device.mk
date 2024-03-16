@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/tapas
+DEVICE_PATH := device/xiaomi/xun
 
 # Configure Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # OTA Assert
-TARGET_OTA_ASSERT_DEVICE := tapas,topaz
+TARGET_OTA_ASSERT_DEVICE := xun
 
 # Boot control, Firmware
 PRODUCT_PACKAGES += \
@@ -50,9 +50,9 @@ PRODUCT_SHIPPING_API_LEVEL  := 31
 PRODUCT_TARGET_VNDK_VERSION := 33
 
 # Display Size & Density
-TARGET_SCREEN_HEIGHT  := 2400
-TARGET_SCREEN_DENSITY := 390
-TARGET_SCREEN_WIDTH   := 1080
+TARGET_SCREEN_HEIGHT  := 1920
+TARGET_SCREEN_DENSITY := 280
+TARGET_SCREEN_WIDTH   := 1200
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -108,7 +108,7 @@ TW_INCLUDE_RESETPROP    := true
 TW_INCLUDE_LIBRESETPROP := true
 TW_MAX_BRIGHTNESS       := 2047
 TW_EXTRA_LANGUAGES      := true
-TW_DEFAULT_BRIGHTNESS   := 1020
+TW_DEFAULT_BRIGHTNESS   := 1000
 TW_EXCLUDE_APEX         := true
 TW_INCLUDE_FASTBOOTD    := true
 TWRP_INCLUDE_LOGCAT     := true
@@ -123,7 +123,7 @@ TW_INPUT_BLACKLIST := "uinput-goodix"
 
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone7/temp"
 TW_BRIGHTNESS_PATH      := "/sys/class/backlight/panel0-backlight/brightness"
-TW_LOAD_VENDOR_MODULES  += "adsp_loader_dlkm.ko focaltech_ts_i2c.ko goodix_ts_9896.ko qti_battery_charger.ko camera.ko"
+TW_LOAD_VENDOR_MODULES  += "adsp_loader_dlkm.ko focaltech_ts_spi.ko qti_battery_charger.ko camera.ko"
 
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_EXCLUDE_DEFAULT_USB_INIT   := true

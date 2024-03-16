@@ -1,4 +1,4 @@
-service unified-script /system/bin/unified-script.sh
+service device-script /system/bin/device-script.sh
     user root
     group root
     disabled
